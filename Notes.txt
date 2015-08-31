@@ -1,10 +1,22 @@
+-- before going into game, make sure orientation lock is on and set to portrait mode 
+
 Notes: 
 
 
 - Daily Coordinates and Colors 
 
 - use (112,171) and (108.2,163.4) to test 
-	when 3: (112,171) is orange, (108, 163) is orange  
-	when 2: (112,171) is dark blue, (108, 163) is orange 
-	when 1: (112,171) is orange (108,163) is dark blue 
+	when 3: (112,171) is peachish, (108, 163) is orange  
+	rbg1: 1053729               rgb2: 15688993
 	
+	when 2: (112,171) is dark blue, (108, 163) is orange 
+	rgb1: 3219489                 rgb2: 15164705
+	
+	when 1: (112,171) is dark peachish (108,163) is dark blue 
+	rgb1: 1053729	                       rgb2: 529441
+	
+	when 0: (112,171) is peachish (108,163) is orange 
+	rgb1: 	2694177	             rgb2: 15164705
+
+- Elite Missions Start Button 
+	- (114.5,949.5); 
