@@ -18,5 +18,15 @@ Notes:
 	when 0: (112,171) is peachish (108,163) is orange 
 	rgb1: 	2694177	             rgb2: 15164705
 
+- Elites Mission Select Page Coordinates 
+	Stage 1: (308.6, 169.3)
+	Stage 2: (308.9, 266.0)
+	Stage 3: (316.1, 362.4)
+	Stage 4: (309.3, 462.5)
+	Stage 5: (302.9, 556.9)
+	Stage 6: (313.4, 660.0)
+	Stage 7: (309.3, 757.5)
+	Stage 8: (324.0, 844.4)
+
 - Elite Missions Start Button 
 	- (114.5,949.5); 
