@@ -29,4 +29,18 @@ Notes:
 	Stage 8: (324.0, 844.4)
 
 - Elite Missions Start Button 
-	- (114.5,949.5); 
+	Coordinates: (114.5,949.5); 
+
+- Elite Mission Finish Replay Button 
+	-Coordinates: (56.2,759.4) 
+	-rgb1: (54.7,770.1)
+		-RGB: 8701935
+	-rgb2: (44.6,763.1) 
+		-RGB: 2727646
+
+- Elite Mission Finish Next Button 
+	-Coordinates: (56.4,909.9) 
+	-rgb1: (56.1,930.6)
+		-RGB: 4883117
+	-rgb2: (56.3,899.3) 
+		-RGB: 4366038
