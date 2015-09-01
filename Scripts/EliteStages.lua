@@ -99,8 +99,10 @@ startElite = function ()
 		-- check if stage is finished 
 		while isStageRunning == true do 
 			stageClearChecker(); 
-			log("Stange Finished"); 
 		end 
+		
+		log("Stange Finished"); 
+		
 		-- when finished click replay button 
 		usleep(1000000); 
 		tap(replayX,replayY); 
