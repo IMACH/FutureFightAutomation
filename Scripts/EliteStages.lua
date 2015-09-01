@@ -4,6 +4,10 @@
 loopTime = 0; 
 replayX = 56; 
 replayY = 770; 
+nextX = 56; 
+nextY = 909;
+startX = 114; 
+startY = 949; 
 isStageRunning = true; -- checks to see if the level is still being played 
 
 -- -- daily entry counter check 
@@ -83,6 +87,12 @@ startElite = function ()
 	
 	--gameplay loop 
 	for i=1,loopTime,1 do 
+		-- tap start 
+		tap(startX,startY); 
+		
+		--delay time for loading stage 10 sec 
+		usleep(10000000); 
+		
 		-- check if stage is finished 
 		while isStageRunning == true do 
 			stageClearChecker(); 
@@ -91,25 +101,9 @@ startElite = function ()
 		usleep(1000000); 
 		tap(replayX,replayY); 
 	end 
+	-- tap stage clear next button 
+	tap(nextX,nextY); 
+	
 end 
 
 startElite(); 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
