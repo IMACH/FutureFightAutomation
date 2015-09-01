@@ -29,16 +29,16 @@ log("rgb2" .. rgb2);
 -- sets the loop time based off daily counter 
 	if (rgb1 == 1053729 and rgb2 == 15688993) then
 		loopTime = 3; 
-		log(loopTime);
+		log("Loop Time:_" .. loopTime);
 	elseif (rgb1 == 3219489 and rgb2 == 15164705) then
 		loopTime = 2; 
-		log(loopTime);
+		log("Loop Time:_" .. loopTime);
 	elseif(rgb1 == 1053729 and rgb2 == 529441) then
 		loopTime = 1; 
-		log(loopTime);
+		log("Loop Time:_" .. loopTime);
 	elseif(rgb1 == 2694177 and rgb2 == 15164705) then 
 		loopTime = 0; 
-		log(loopTime);
+		log("Loop Time:_" .. loopTime);
 	end 
 end 
 
@@ -101,13 +101,19 @@ startElite = function ()
 			stageClearChecker(); 
 		end 
 		
-		log("Stange Finished"); 
+		log("Stage Finished"); 
 		
 		-- when finished click replay button 
-		usleep(1000000); 
+		usleep(3000000); 
 		tap(replayX,replayY); 
-		log("Tapped Replay")
+		--delay for replay to start screen 
+		usleep(10000000);
+		log("Tapped Replay");
 		log("Loop Number:_" .. i); 
+		
+		if (i == loopTime) then 
+			break; 
+		end 
 	end 
 	-- tap stage clear next button 
 	tap(nextX,nextY); 
