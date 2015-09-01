@@ -2,6 +2,8 @@
 
 -- global variables 
 loopTime = 0; 
+replayX = 56; 
+replayY = 770; 
 isStageRunning = true; -- checks to see if the level is still being played 
 
 -- -- daily entry counter check 
@@ -36,16 +38,13 @@ log("rgb2" .. rgb2);
 	end 
 end 
 
--- starts and sets loop time of stage 
-startElite = function ()
 
-end 
-
-
--- elite play 
+-- Stage Clear Checker, returns true or false on isStageRunning variable 
 -- first start the stage 
--- then check to see if finished 
-elitePlay = function() 
+-- then check to see if finished by using 4 pixel coordinates found on the replay 
+-- button and next button on the finish stage screen 
+stageClearChecker = function() 
+
 -- define xy coordinate values, can be easily changed 
 local replayTest1x = 54;
 local replayTest1y = 770; 
@@ -69,18 +68,48 @@ local nextButtonRgb2 = getColor(nextTest2x,nextTest2y);
 
 -- test to see if gameplay is done. by checking all colors 
 
-
-
-
-
-usleep(1000000);
-tap(114.5,949.5); -- tap start button 
-
--- finished check 
-
+	if (replayButtonRgb1 == 8701935 and replayButtonRgb2 == 2727646 and nextButtonRgb1 == 4883117 and nextButtonRgb2 == 4366038) then 
+		isStageRunning = false; 
+	end 
 	
 end 
--- stage 1 
--- wait 1 second after pressing start, incase delay from device 
-usleep(1000000); 
-dailyChecker(); 
+
+
+-- starts and sets loop time of stage 
+-- main function run this 
+startElite = function ()
+	-- run dailyChecker to get loop count 
+	dailyChecker(); 
+	
+	--gameplay loop 
+	for i=1,loopTime,1 do 
+		-- check if stage is finished 
+		while isStageRunning == true do 
+			stageClearChecker(); 
+		end 
+		-- when finished click replay button 
+		usleep(1000000); 
+		tap(replayX,replayY); 
+	end 
+end 
+
+startElite(); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
