@@ -74,6 +74,7 @@ local nextButtonRgb2 = getColor(nextTest2x,nextTest2y);
 
 	if (replayButtonRgb1 == 8701935 and replayButtonRgb2 == 2727646 and nextButtonRgb1 == 4883117 and nextButtonRgb2 == 4366038) then 
 		isStageRunning = false; 
+		log("Stage Finished");
 	end 
 	
 end 
@@ -88,6 +89,9 @@ startElite = function ()
 	
 	--gameplay loop 
 	for i=1,loopTime,1 do 
+		
+		--log loop Number 
+		log("Loop Number:_" .. i); 
 		-- tap start 
 		tap(startX,startY); 
 		log("Tap Pressed"); 
@@ -101,20 +105,20 @@ startElite = function ()
 			stageClearChecker(); 
 		end 
 		
-		log("Stage Finished"); 
-		
 		-- when finished click replay button 
 		usleep(3000000); 
-		tap(replayX,replayY); 
+		tap(replayX,replayY);
+		log("Tapped Replay");	
+		
 		--delay for replay to start screen 
 		usleep(10000000);
-		log("Tapped Replay");
-		log("Loop Number:_" .. i); 
+		
 		
 		if (i == loopTime) then 
 			break; 
 		end 
 	end 
+	
 	-- tap stage clear next button 
 	tap(nextX,nextY); 
 	log("Tapped next stage");
