@@ -1,5 +1,5 @@
--- make sure in elites window on chapter 1 screen 
-
+-- iPad Mini 1 Resoltion 
+SCREEN_RESOLUTION="768x1027"; 
 -- global variables 
 loopTime = 0; 
 replayX = 56; 
@@ -84,25 +84,32 @@ end
 startElite = function ()
 	-- run dailyChecker to get loop count 
 	dailyChecker(); 
+	log("Daily Checker"); 
 	
 	--gameplay loop 
 	for i=1,loopTime,1 do 
 		-- tap start 
 		tap(startX,startY); 
+		log("Tap Pressed"); 
 		
 		--delay time for loading stage 10 sec 
 		usleep(10000000); 
+		log("Loading: 10 seconds"); 
 		
 		-- check if stage is finished 
 		while isStageRunning == true do 
 			stageClearChecker(); 
+			log("Stange Finished"); 
 		end 
 		-- when finished click replay button 
 		usleep(1000000); 
 		tap(replayX,replayY); 
+		log("Tapped Replay")
+		log("Loop Number:_" .. i); 
 	end 
 	-- tap stage clear next button 
 	tap(nextX,nextY); 
+	log("Tapped next stage");
 	
 end 
 
