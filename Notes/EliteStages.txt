@@ -29,7 +29,14 @@ Notes:
 	Stage 8: (324.0, 844.4)
 
 - Elite Missions Start Button 
-	Coordinates: (114.5,949.5); 
+	Coordinates: (114.5,949.5);
+
+-Elite Missions Next Level Button (On Stage Enter Screen)  
+	Coordinates: (586.4,461.4)
+
+
+-Elite Missions Previous Level Button (On Stage Enter Screen) 
+	Coordinates: (587.1,18.3) 
 
 - Elite Mission Finish Replay Button 
 	-Coordinates: (56.2,759.4) 

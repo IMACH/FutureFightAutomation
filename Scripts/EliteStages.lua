@@ -82,7 +82,8 @@ end
 
 -- starts and sets loop time of stage 
 -- main function run this 
-startElite = function ()
+
+-- startElite = function ()
 	-- run dailyChecker to get loop count 
 	dailyChecker(); 
 	log("Daily Checker"); 
@@ -125,4 +126,66 @@ startElite = function ()
 	
 end 
 
-startElite(); 
+startElitev2 = function ()
+-- once stage is selected click start 
+usleep(1000000); 
+tap(startX, startY);
+
+-- delay for stage load time 
+usleep(10000000); 
+
+-- check if stage is finished 
+	while isStageRunning == true do 
+		stageClearChecker(); 
+	end 
+
+-- delay for stage finish animation 2-3 seconds 
+usleep(2000000); 
+-- click replay 
+tap(replayX,replayY);
+
+-- delay for loading screen 
+usleep(10000000); 
+
+-- run dailyChecker, if 0 then move on to next stage if not press start 
+dailyChecker(); 
+
+	if (loopTime == 0) then 
+		usleep(1000000); 
+		tap(586,461);
+	else 
+		tap(startX,startY); 
+	end 
+end 
+
+startElitev2(); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
