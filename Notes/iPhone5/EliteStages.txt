@@ -30,16 +30,17 @@ Notes:
 -Elite Missions Previous Level Button (On Stage Enter Screen) 
 	Coordinates: (265.8,8.7) 
 
+
 - Elite Mission Finish Replay Button 
-	-Coordinates: () 
-	-rgb1: ()
-		-RGB: 
-	-rgb2: () 
-		-RGB: 
+	-Coordinates: (29.5,429.8) 
+	-rgb1: (29.1,424.7)
+		-RGB: 4369127
+	-rgb2: (29.4,436.6) 
+		-RGB: 9754607
 
 - Elite Mission Finish Next Button 
-	-Coordinates: () 
-	-rgb1: ()
-		-RGB: 
-	-rgb2: () 
-		-RGB: 
+	-Coordinates: (28.6,508.3) 
+	-rgb1: (29.2,503.9)
+		-RGB: 4366038
+	-rgb2: (29.3,517.2) 
+		-RGB: 10279919

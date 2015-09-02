@@ -8,6 +8,8 @@ nextX = 56;
 nextY = 909;
 startX = 114; 
 startY = 949; 
+stageNextX = 586; -- next stage on stage menu screen 
+stageNexyY = 461; -- next stage on stage menu screen 
 isStageRunning = true; -- checks to see if the level is still being played 
 
 -- -- daily entry counter check 
@@ -153,7 +155,7 @@ dailyChecker();
 
 	if (loopTime == 0) then 
 		usleep(1000000); 
-		tap(586,461);
+		tap(stageNextX,stageNexyY);
 	else 
 		tap(startX,startY); 
 	end 

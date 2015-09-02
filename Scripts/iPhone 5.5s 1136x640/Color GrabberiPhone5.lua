@@ -12,15 +12,15 @@ end
 
 stageFinishColor = function()
 --Stage Finish 
-local replayTest1x = 54;
-local replayTest1y = 770; 
-local replayTest2x = 44; 
-local replayTest2y = 763; 
+local replayTest1x = 29;
+local replayTest1y = 424; 
+local replayTest2x = 29; 
+local replayTest2y = 436; 
 
-local nextTest1x = 56; 
-local nextTest1y = 930;
-local nextTest2x = 56; 
-local nextTest2y = 899;  
+local nextTest1x = 29; 
+local nextTest1y = 503;
+local nextTest2x = 29; 
+local nextTest2y = 517;  
 
 
 -- get color for two replay button points 
@@ -36,4 +36,4 @@ local nextButtonRgb2 = getColor(nextTest2x,nextTest2y);
 log("nextButtonRgb2:_" .. nextButtonRgb2); 
 end 
 
-dailyColor(); 
+stageFinishColor();
