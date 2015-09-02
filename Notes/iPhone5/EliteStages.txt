@@ -1,0 +1,45 @@
+-- before going into game, make sure orientation lock is on and set to portrait mode 
+
+Notes: 
+
+
+- Daily Coordinates and Colors 
+
+- use (19,85) and (17,88) to test 
+	when 3: (19,85)              (17,88) 
+	rbg1: 4335649                        rgb2: 15688993 
+	
+	when 2: (19,85)            (17,88) 
+	rgb1: 10241313                          rgb2: 15687969
+	
+	when 1: (19,85)             (17,88) 
+	rgb1: 1053729 	                       rgb2: 8075297
+	
+	when 0: (19,85)            (17,88) 
+	rgb1:16213281 	                 rgb2:15688993 
+
+
+
+- Elite Missions Start Button 
+	Coordinates: (22.3,506.7);
+
+-Elite Missions Next Level Button (On Stage Enter Screen)  
+	Coordinates: (266.2,240.6)
+
+
+-Elite Missions Previous Level Button (On Stage Enter Screen) 
+	Coordinates: (265.8,8.7) 
+
+- Elite Mission Finish Replay Button 
+	-Coordinates: () 
+	-rgb1: ()
+		-RGB: 
+	-rgb2: () 
+		-RGB: 
+
+- Elite Mission Finish Next Button 
+	-Coordinates: () 
+	-rgb1: ()
+		-RGB: 
+	-rgb2: () 
+		-RGB: 
