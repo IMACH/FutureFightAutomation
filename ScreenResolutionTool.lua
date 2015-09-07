@@ -1,6 +1,7 @@
 local width, height = getScreenSize(); 
 log("Width" .. width); 
 log("Height" .. height); 
+local region = {}; 
 
 regionCalculate = function (topLeftHP,topLeftWP,heightP, widthP) 
 -- P represents Percentage, 
@@ -20,12 +21,26 @@ log("Height: " .. regionHeight);
 regionWidth = (width * widthP); 
 log("Width: " .. regionWidth); 
 
-local region = {coordinateH,coordinateW,regionHeight,regionWidth}; 
+region = {coordinateH,coordinateW,regionHeight,regionWidth}; 
 -- screenshot not working atm 
 screenshot("FutureFight/mission.png",nil);
 
+return region;
+
 end 
 
+f1 = function (width)
+log (width); 
+log("Mission"); 
+end 
 
+keepFindingImage = function ()
+local exit = false; 
 
-regionCalculate(.63,.15,.23,.15);
+keepFindingImage("FutureFight/mission.png", 1, 0.5, nil, region, f1, 1000, exit )
+usleep(10000000); 
+exit = true; 
+end 
+
+regionCalculate(0.63,0.15,0.23,0.15); 
+keepFindingImage(); 
