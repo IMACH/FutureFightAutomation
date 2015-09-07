@@ -1,4 +1,4 @@
-local width, height = getScreenResolution(); 
+local width, height = getScreenSize(); 
 log("Width" .. width); 
 log("Height" .. height); 
 
@@ -12,13 +12,13 @@ local regionWidth = 0;
 
 coordinateH = (height * topLeftHP); 
 coordinateW = (width * topLeftWP); 
-log("CoordinateH" .. coordinateH); 
-log("CoordinateW" .. coordinateW); 
+log("CoordinateH: " .. coordinateH); 
+log("CoordinateW: " .. coordinateW); 
 
 regionHeight = (height * heightP);
-log("Height" .. regionHeight);  
+log("Height: " .. regionHeight);  
 regionWidth = (width * widthP); 
-log("Width" .. regionWidth); 
+log("Width: " .. regionWidth); 
 
 local region = {coordinateH,coordinateW,regionHeight,regionWidth}; 
 -- screenshot not working atm 
@@ -28,4 +28,4 @@ end
 
 
 
-regionCalculate(.60,.85,.13,.25);
+regionCalculate(.63,.15,.23,.15);
